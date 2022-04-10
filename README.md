@@ -1,5 +1,6 @@
-# LIBUSB 1.0.24-DEV (ANDROID)   
+# LIBUSB 1.0.24-DEV (JNI)   
 [https://github.com/libusb/libusb](https://github.com/libusb/libusb)   
+with xloem JNI changes (https://github.com/xloem/libusb)
   
 **TARGETS**   
 * android-21-armeabi-v7a (ndk-r20b/api-21)   
@@ -33,7 +34,7 @@ wget https://dl.google.com/android/repository/android-ndk-r20b-linux-x86_64.zip
 **BUILD LIBUSB (android-21-armeabi-v7a)**
 Open "Ubuntu 18.04 LTS"   
 ```
-git clone https://github.com/djp952/libusb-android libusb -b android --depth=1
+git clone https://github.com/djp952/libusb-jni libusb -b android --depth=1
 export TOOLCHAIN=$(pwd)/android-ndk-r20b/toolchains/llvm/prebuilt/linux-x86_64
 export AR=$TOOLCHAIN/bin/arm-linux-androideabi-ar
 export AS=$TOOLCHAIN/bin/arm-linux-androideabi-as
@@ -54,7 +55,7 @@ Get libusb-1.0.a from lib/.libs
 **BUILD LIBUSB (android-21-arm64-v8a)**
 Open "Ubuntu 18.04 LTS"   
 ```
-git clone https://github.com/djp952/libusb-android libusb -b android --depth=1
+git clone https://github.com/djp952/libusb-jni libusb -b android --depth=1
 export TOOLCHAIN=$(pwd)/android-ndk-r20b/toolchains/llvm/prebuilt/linux-x86_64
 export AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
 export AS=$TOOLCHAIN/bin/aarch64-linux-android-as
@@ -75,7 +76,7 @@ Get libusb-1.0.a from lib/.libs
 **BUILD LIBUSB (android-21-x86)**
 Open "Ubuntu 18.04 LTS"   
 ```
-git clone https://github.com/djp952/libusb-android libusb -b android --depth=1
+git clone https://github.com/djp952/libusb-jni libusb -b android --depth=1
 export TOOLCHAIN=$(pwd)/android-ndk-r20b/toolchains/llvm/prebuilt/linux-x86_64
 export AR=$TOOLCHAIN/bin/i686-linux-android-ar
 export AS=$TOOLCHAIN/bin/i686-linux-android-as
@@ -96,7 +97,7 @@ Get libusb-1.0.a from lib/.libs
 **BUILD LIBUSB (android-21-x86_64)**
 Open "Ubuntu 18.04 LTS"   
 ```
-git clone https://github.com/djp952/libusb-android libusb -b android --depth=1
+git clone https://github.com/djp952/libusb-jni libusb -b android --depth=1
 export TOOLCHAIN=$(pwd)/android-ndk-r20b/toolchains/llvm/prebuilt/linux-x86_64
 export AR=$TOOLCHAIN/bin/x86_64-linux-android-ar
 export AS=$TOOLCHAIN/bin/x86_64-linux-android-as
